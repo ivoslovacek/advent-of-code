@@ -41,7 +41,6 @@ pub fn second_star() {
         }
     }
 
-    list1.sort();
     let frequencies = get_frequencies(&list2);
 
     for item in list1 {
