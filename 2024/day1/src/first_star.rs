@@ -35,9 +35,7 @@ pub fn first_star() {
     list1.sort();
     list2.sort();
 
-    let sorted_pairs: Vec<(i64, i64)> = list1.into_iter().zip(list2.into_iter()).collect();
-
-    for (num1, num2) in sorted_pairs {
+    for (num1, num2) in list1.into_iter().zip(list2.into_iter()) {
         sum += num1.abs_diff(num2);
     }
 
